@@ -1,17 +1,112 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GithubIcon from "../../public/github.svg";
+import TelegramIcon from "../../public/telegram.svg";
+import TwitterXIcon from "../../public/twitter-x.svg";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <main class="w-full max-w-7xl py-12">
+    <section class="w-full max-w-2xl">
+      <article>
+        <h1 class="mb-10 text-3xl font-bold">
+          <a
+            href="https://github.com/Rebix"
+            class="text-rose-pine-pine flex items-end gap-2 !no-underline"
+            target="_blank"
+          >
+            <GithubIcon class="size-9" />
+            <span>@Rebix</span>
+          </a>
+        </h1>
+        <section aria-label="Biography">
+          <h2 class="border-rose-pine-muted text-rose-pine-iris mb-4 border-b">
+            Bio
+          </h2>
+          <p>
+            I'm Sina, a full-stack developer and someone who genuinely enjoys
+            making software. I've been building for the web for over 7 years,
+            working across everything from interfaces and backend systems to
+            deployment and infrastructure.
+          </p>
+          <p>
+            These days I mostly work with React, Next.js, TypeScript, and
+            Django, but I'm more interested in solving problems than being tied
+            to a particular stack. I like learning how new technologies work,
+            experimenting with them, and finding practical ways to use them.
+          </p>
+          <p>
+            I share my work, my experiments, and anything interesting I discover
+            along the way here.
+          </p>
+        </section>
+        <section aria-label="beliefs">
+          <h2 class="mt-10 mb-4 text-xl font-bold">Things I believe in</h2>
+          <ul class="list-disc pl-8">
+            <li>
+              <h3>Complexity must earn its place.</h3>
+              <p class="text-rose-pine-subtle text-sm">
+                Simple systems are easier to understand, change, and trust. I
+                add complexity when the problem demands it.
+              </p>
+            </li>
+            <li>
+              <h3>Understand the whole thing, not just your part of it.</h3>
+              <p class="text-rose-pine-subtle text-sm">
+                I like knowing how the pieces connect, from the interface to the
+                infrastructure.
+              </p>
+            </li>
+            <li>
+              <h3>Question assumptions. Verify what actually happens.</h3>
+              <p class="text-rose-pine-subtle text-sm">
+                I'd rather test, measure, and understand than rely on
+                assumptions.
+              </p>
+            </li>
+            <li>
+              <h3>Technology is a tool, not an identity.</h3>
+              <p class="text-rose-pine-subtle text-sm">
+                Choose the tool that fits the problem, not just the one that
+                feels familiar or comfortable to me.
+              </p>
+            </li>
+
+            <li>
+              <h3>Reliable beats clever.</h3>
+              <p class="text-rose-pine-subtle text-sm">
+                I’d rather build something boring that works every day.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="mt-10 mb-4 text-xl font-bold">Blogs</h2>
+          <ul>
+            <li>No blog posts yet...</li>
+          </ul>
+        </section>
+        <section aria-label="contact">
+          <h2 class="mt-10 mb-4 text-xl font-bold">Have something in mind?</h2>
+          <a href="mailto:me@gmail.com">Get in touch</a>
+          <div class="mt-10 flex items-end gap-4">
+            <a href="https://github.com/Rebix" class="flex items-center gap-1">
+              <GithubIcon class="size-7" />
+              <!-- <span>Github</span> -->
+            </a>
+            <span>&bull;</span>
+            <a href="https://t.me/theRebix" class="flex items-center gap-1">
+              <TelegramIcon class="size-7" />
+              <!-- <span>Telegram</span> -->
+            </a>
+            <span>&bull;</span>
+            <a href="https://x.com/theRebix" class="flex items-center gap-1">
+              <TwitterXIcon class="size-7" />
+              <!-- <span>X</span> -->
+            </a>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+</BaseLayout>

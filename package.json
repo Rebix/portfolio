@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "deploy": "wrangler deploy",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -17,9 +18,10 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "cookie": "2.0.1",
     "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwind": "^2.2.12",
-    "prettier-plugin-tailwindcss": "^0.8.1"
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "wrangler": "^4.123.0"
   }
 }

@@ -12,7 +12,7 @@ import TwitterXIcon from "../../public/twitter-x.svg";
         <h1 class="mb-10 text-3xl font-bold">
           <a
             href="https://github.com/Rebix"
-            class="text-rose-pine-pine flex items-end gap-2 !no-underline"
+            class="flex items-end gap-2 no-underline!"
             target="_blank"
           >
             <GithubIcon class="size-9" />
@@ -39,6 +39,38 @@ import TwitterXIcon from "../../public/twitter-x.svg";
             I share my work, my experiments, and anything interesting I discover
             along the way here.
           </p>
+        </section>
+        <section aria-label="latest work">
+          <h2 class="mt-10 mb-4 text-xl font-bold">Latest work</h2>
+          <article>
+            <h3>
+              <a
+                href="https://github.com/Rebix/bse-ecommerce"
+                target="_blank"
+                class="mb-2 block"
+              >
+                BSE Ecommerce
+              </a>
+            </h3>
+            <p class="text-sm">
+              A full-stack ecommerce platform with device-based product
+              discovery, OTP authentication, payments, order processing, and a
+              separate service for synchronizing external product catalogs.
+            </p>
+            <p class="text-rose-pine-subtle text-sm">
+              Next.js &bull; TypeScript &bull; Django &bull; PostgreSQL &bull;
+              Docker
+            </p>
+            <p class="flex items-center gap-x-2 text-sm">
+              <a href="https://github.com/Rebix/bse-ecommerce">
+                Main repository
+              </a>
+              <span aria-hidden="true">&bull;</span>
+              <a href="https://github.com/Rebix/bse-catalog-sync">
+                Catalog service
+              </a>
+            </p>
+          </article>
         </section>
         <section aria-label="beliefs">
           <h2 class="mt-10 mb-4 text-xl font-bold">Things I believe in</h2>
@@ -80,29 +112,38 @@ import TwitterXIcon from "../../public/twitter-x.svg";
             </li>
           </ul>
         </section>
-        <section>
-          <h2 class="mt-10 mb-4 text-xl font-bold">Blogs</h2>
-          <ul>
-            <li>No blog posts yet...</li>
-          </ul>
-        </section>
+        <!-- <section> -->
+        <!--   <h2 class="mt-10 mb-4 text-xl font-bold">Blogs</h2> -->
+        <!--   <ul> -->
+        <!--     <li>No blog posts yet...</li> -->
+        <!--   </ul> -->
+        <!-- </section> -->
         <section aria-label="contact">
           <h2 class="mt-10 mb-4 text-xl font-bold">Have something in mind?</h2>
-          <a href="mailto:me@gmail.com">Get in touch</a>
+          <a href="mailto:itsrebix@proton.me">Get in touch</a>
           <div class="mt-10 flex items-end gap-4">
-            <a href="https://github.com/Rebix" class="flex items-center gap-1">
+            <a
+              href="https://github.com/Rebix"
+              aria-label="github"
+              class="flex items-center gap-1"
+            >
               <GithubIcon class="size-7" />
-              <!-- <span>Github</span> -->
             </a>
             <span>&bull;</span>
-            <a href="https://t.me/theRebix" class="flex items-center gap-1">
+            <a
+              href="https://t.me/theRebix"
+              aria-label="telegram"
+              class="flex items-center gap-1"
+            >
               <TelegramIcon class="size-7" />
-              <!-- <span>Telegram</span> -->
             </a>
             <span>&bull;</span>
-            <a href="https://x.com/theRebix" class="flex items-center gap-1">
+            <a
+              href="https://x.com/theRebix"
+              aria-label="X"
+              class="flex items-center gap-1"
+            >
               <TwitterXIcon class="size-7" />
-              <!-- <span>X</span> -->
             </a>
           </div>
         </section>

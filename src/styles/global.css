@@ -18,6 +18,10 @@
   --color-rose-pine-highlight-high: hsl(247.5deg, 13.186813%, 35.686275%);
 }
 
+:root {
+  color-scheme: dark;
+}
+
 body {
   font-family: var(--font-jetbrains-mono);
 }

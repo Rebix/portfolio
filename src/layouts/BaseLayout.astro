@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import { Font } from "astro:assets";
 ---
 
-<html lang="en" class="bg-rose-pine-base">
+<html lang="en" class="bg-rose-pine-base scheme-dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,9 +15,7 @@ import { Font } from "astro:assets";
     <title>Rebix</title>
     <Font cssVariable="--font-jetbrains-mono" />
   </head>
-  <body
-    class="text-rose-pine-text mx-auto max-w-6xl px-6 xl:px-0"
-  >
+  <body class="text-rose-pine-text mx-auto max-w-6xl px-6 xl:px-0">
     <!-- <Header /> -->
     <slot />
     <Footer />

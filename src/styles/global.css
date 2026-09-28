@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-rose-pine-base: hsl(246deg, 24%, 17%);
-  --color-rose-pine-surface: hsl(248deg, 24%, 20%);
-  --color-rose-pine-overlay: hsl(248deg, 21%, 26%);
-  --color-rose-pine-muted: hsl(249deg, 12%, 47%);
-  --color-rose-pine-subtle: hsl(248deg, 15%, 61%);
-  --color-rose-pine-text: hsl(245deg, 50%, 91%);
-  --color-rose-pine-love: hsl(343deg, 76%, 68%);
-  --color-rose-pine-gold: hsl(35deg, 88%, 72%);
-  --color-rose-pine-rose: hsl(2deg, 66%, 75%);
-  --color-rose-pine-pine: hsl(197deg, 48%, 47%);
-  --color-rose-pine-foam: hsl(189deg, 43%, 73%);
-  --color-rose-pine-iris: hsl(267deg, 57%, 78%);
-  --color-rose-pine-highlight-low: hsl(245deg, 22%, 20%);
-  --color-rose-pine-highlight-med: hsl(247deg, 16%, 30%);
-  --color-rose-pine-highlight-high: hsl(249deg, 15%, 38%);
+  --color-rose-pine-base: hsl(249.230769deg, 22.033898%, 11.568627%);
+  --color-rose-pine-surface: hsl(247.058824deg, 22.666667%, 14.705882%);
+  --color-rose-pine-overlay: hsl(247.826087deg, 24.731183%, 18.235294%);
+  --color-rose-pine-muted: hsl(248.571429deg, 11.666667%, 47.058824%);
+  --color-rose-pine-subtle: hsl(248deg, 15%, 60.784314%);
+  --color-rose-pine-text: hsl(245.454545deg, 50%, 91.372549%);
+  --color-rose-pine-love: hsl(343.064516deg, 75.609756%, 67.843137%);
+  --color-rose-pine-gold: hsl(34.96063deg, 87.586207%, 71.568627%);
+  --color-rose-pine-rose: hsl(2.44898deg, 55.05618%, 82.54902%);
+  --color-rose-pine-pine: hsl(197.234043deg, 48.958333%, 37.647059%);
+  --color-rose-pine-foam: hsl(189deg, 43.478261%, 72.941176%);
+  --color-rose-pine-iris: hsl(267.1875deg, 57.142857%, 78.039216%);
+  --color-rose-pine-highlight-low: hsl(244.285714deg, 17.948718%, 15.294118%);
+  --color-rose-pine-highlight-med: hsl(248.571429deg, 14.685315%, 28.039216%);
+  --color-rose-pine-highlight-high: hsl(247.5deg, 13.186813%, 35.686275%);
 }
 
 body {
@@ -23,13 +23,13 @@ body {
 }
 
 a {
-  @apply text-rose-pine-pine underline;
+  @apply text-rose-pine-foam decoration-rose-pine-foam/50 hover:text-rose-pine-rose hover:decoration-rose-pine-rose focus-visible:outline-rose-pine-iris underline-offset-4 transition-colors focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4;
 }
 
 p {
-  @apply mb-4
+  @apply mb-4;
 }
 
 ::selection {
-  @apply bg-rose-pine-subtle;
+  @apply bg-rose-pine-highlight-high text-rose-pine-text;
 }
